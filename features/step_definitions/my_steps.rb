@@ -17,9 +17,9 @@ Then(/^debo poder ver "([^"]*)" e intentos restantes "([^"]*)"$/) do |jugador1, 
 end
 
 
-Then(/^debo poder ver el control "([^"]*)" y el control "([^"]*)"$/) do |cajaPalabraJ1, cajaLetraJ1|
-  expect(page.body).to match /#{cajaPalabraJ1}/m
-  expect(page.body).to match /#{cajaLetraJ1}/m
+Then(/^debo poder ver el control "([^"]*)" y el control "([^"]*)"$/) do |palabraJ1, cajaLetraEvaluar|
+  expect(page.body).to match /#{palabraJ1}/m
+  expect(page.body).to match /#{cajaLetraEvaluar}/m
 end
 
 When(/^el sistema muestra el texto "([^"]*)" correspondiente a la palabra 'SCRUM'$/) do |palabraJ1|
