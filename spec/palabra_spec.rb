@@ -15,6 +15,13 @@ describe Palabra do
 		
 	end
 
+	it 'valida si la letra esta en la palabra' do
+		palabra = Palabra.new
+		contieneLetra = palabra.palabraContieneLetra? "casa", "c"
+		
+		expect(contieneLetra).to eq true
+		
+	end
 
 
 	

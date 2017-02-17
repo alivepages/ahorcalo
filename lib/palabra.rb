@@ -21,6 +21,10 @@ class Palabra
 		@palabras
 	end
 
+	def palabraContieneLetra? palabra, letra
+		true
+	end
+
 
 
 end
