@@ -3,6 +3,7 @@ class Palabra
 
 	def initialize
 		@palabras = ["casa", "arbol", "caballo", "cuaderno", "mesa", "cabello", "caballo", "chancla", "piña", "pan"]
+		@palabraActual = ""
 	end
 
 	def seleccionaAleatoria
@@ -18,12 +19,15 @@ class Palabra
 	end
 
 	def getPalabras 
-		@palabras
+		@palabraActual = @palabras[seleccionaAleatoria]
+
 	end
 
-	def palabraContieneLetra? palabra, letra
-		palabra.include? letra
+	def palabraContieneLetra? letra
+		@palabraActual.include? letra
 	end
+
+
 
 
 
