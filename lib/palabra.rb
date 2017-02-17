@@ -22,7 +22,7 @@ class Palabra
 	end
 
 	def palabraContieneLetra? palabra, letra
-		true
+		palabra.include? letra
 	end
 
 
