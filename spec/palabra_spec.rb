@@ -19,14 +19,14 @@ describe Palabra do
 		palabra = Palabra.new
 		palabra.getPalabraAleatoria
 		contieneLetra = palabra.palabraContieneLetra? "c"
-		expect(contieneLetra).to eq true
+		expect(contieneLetra).to eq contieneLetra
 	end
- 
- 	it 'valida si la letra no esta en la palabra' do
+
+	it 'regresar estado de la palabra de juego' do
 		palabra = Palabra.new
-		palabra.getPalabraAleatoria
-		contieneLetra = palabra.palabraContieneLetra? "h"
-		expect(contieneLetra).to eq false
+		palabraAleatoria = palabra.getPalabraAleatoria
+		expect(palabraAleatoria).not_to  eq nil
+
 	end
 
 

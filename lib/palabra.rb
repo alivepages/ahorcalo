@@ -4,6 +4,7 @@ class Palabra
 	def initialize
 		@palabras = ["casa", "arbol", "caballo", "cuaderno", "mesa", "cabello", "caballo", "chancla", "piña", "pan"]
 		@palabraActual = ""
+		@palabraJuego = ""
 	end
 
 	def seleccionaAleatoria
@@ -20,6 +21,13 @@ class Palabra
 
 	def getPalabraAleatoria
 		@palabraActual = @palabras[seleccionaAleatoria]
+		numeroCaracteres = @palabraActual.length
+
+		for i in 1..numeroCaracteres
+			@palabraJuego = @palabraJuego + "@"
+		end
+
+		@palabraJuego
 	end
 
 	def getPalabras 
@@ -37,5 +45,5 @@ class Palabra
 
 end
 
-#palabra = Palabra.new
-#puts palabra.getPalabras[palabra.seleccionaAleatoria()]
+palabra = Palabra.new
+puts palabra.getPalabraAleatoria
