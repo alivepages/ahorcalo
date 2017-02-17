@@ -8,3 +8,4 @@ end
 post '/tablero' do	
 	erb :tablero
 end
+
