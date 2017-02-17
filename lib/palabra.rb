@@ -18,9 +18,13 @@ class Palabra
 
 	end
 
-	def getPalabras 
+	def getPalabraAleatoria
 		@palabraActual = @palabras[seleccionaAleatoria]
+	end
 
+	def getPalabras 
+		#@palabraActual = @palabras[seleccionaAleatoria]
+		@palabras
 	end
 
 	def palabraContieneLetra? letra

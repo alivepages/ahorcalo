@@ -17,15 +17,18 @@ describe Palabra do
 
 	it 'valida si la letra esta en la palabra' do
 		palabra = Palabra.new
-		contieneLetra = palabra.palabraContieneLetra? "casa", "c"
+		palabra.getPalabraAleatoria
+		contieneLetra = palabra.palabraContieneLetra? "c"
 		expect(contieneLetra).to eq true
 	end
  
  	it 'valida si la letra no esta en la palabra' do
 		palabra = Palabra.new
-		contieneLetra = palabra.palabraContieneLetra? "casa", "h"
+		palabra.getPalabraAleatoria
+		contieneLetra = palabra.palabraContieneLetra? "h"
 		expect(contieneLetra).to eq false
 	end
+
 
 	
 end
